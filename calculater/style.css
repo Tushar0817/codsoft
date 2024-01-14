@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Change the background color */
+}
+
+.button {
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid #3498db; /* Change the button border color */
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #3498db; /* Change the button background color */
+  color: #fff; /* Change the button text color */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for color change */
+}
+
+.button:hover {
+  background-color: #2980b9; /* Change the button background color on hover */
+  color: #fff; /* Change the button text color on hover */
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  width: 291px;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0px;
+  border: 2px solid #3498db; /* Change the input border color */
+  border-radius: 5px;
+}
+
+/* Add animation to the input */
+.row input:focus {
+  outline: none;
+  border-color: #2980b9; /* Change the input border color on focus */
+  box-shadow: 0 0 5px #3498db; /* Add a box shadow on focus */
+}
+
+.container {
+  background-color: #fff; /* Change the container background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the container */
+}
+
+/* Add animation to the container */
+.container {
+  animation: fadeInUp 0.5s ease; /* Add fadeInUp animation */
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
